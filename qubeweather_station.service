@@ -1,0 +1,10 @@
+[Unit]
+Description=qubeWeather station
+After=multi-user.target
+
+[Service]
+Type=idle
+ExecStart=/usr/bin/python /opt/qubeweather-station/station.py
+
+[Install]
+WantedBy=multi-user.target
